@@ -11,6 +11,9 @@ A Flask App was later developed wherein user can upload Chest X-rays or CT Scans
 The article for the project was selected and published in <b>Towards Data Science</b>:<br> 
 https://towardsdatascience.com/covid-19-detector-flask-app-based-on-chest-x-rays-and-ct-scans-using-deep-learning-a0db89e1ed2a
 
+# NOTE ----- DO THIS BEFORE SETUP -----
+The dataset and models of the repository have been moved to Google Drive due to expiry of my Github LFS. So please download the zip file from <b><a href="https://drive.google.com/file/d/1dA-rdmDmCGa3xxW5KpfLJdo7M54lPcQq/view?usp=sharing">here</a></b>, extract it and replace the above data and models folder with these. <b>Make sure you follow these steps otherwise Flask App will not work properly. Also make sure you have PYTHON V 3.8.5. Other versions might not be supported</b>
+
 # Dataset
 The dataset for the project was gathered from two sources:
 1. Chest X-ray images (1000 images) were obtained from: https://github.com/ieee8023/covid-chestxray-dataset
@@ -78,6 +81,7 @@ More information can be found <a href="https://www.mathworks.com/help/deeplearni
 ## How to use Flask App
 <ul>
   <li>Download repo, change to directory of repo, go to command prompt and run <b>pip install -r requirements.txt</b></li>
+  <li>The dataset and models of the repository have been moved to Google Drive due to expiry of my Github LFS. So please download the zip file from <b><a href="https://drive.google.com/file/d/1dA-rdmDmCGa3xxW5KpfLJdo7M54lPcQq/view?usp=sharing">here</a></b>, extract it and replace the above data and models folder with these. Also make sure you have PYTHON V 3.8.5. Other versions might not be supported</li>
   <li>On command prompt, run <b>python app.py</b></li>
   <li>Open your web browser and go to <b>127.0.0.1:5000</b> to access the Flask App</li>
 </ul>
