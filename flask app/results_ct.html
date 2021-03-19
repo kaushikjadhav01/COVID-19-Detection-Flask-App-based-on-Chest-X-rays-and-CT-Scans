@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CT Scan Detection Results | COVID-19 Detector</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="assets/images/favicons/site.webmanifest">
+
+    <!-- plugin scripts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700%7CBarlow:300,400,500,600,700,800,900%7CPT+Sans:400,700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="assets/css/vimns-icons.css">
+
+
+
+    <!-- template styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+
+
+
+
+
+
+</head>
+
+<body>
+    <div class="preloader">
+        <img src="assets/images/loader.png" class="preloader__image" alt="">
+    </div><!-- /.preloader -->
+    <div class="page-wrapper">
+
+
+
+        <header class="site-header-one">
+            <nav class="main-nav__one stricky">
+                <div class="container-fluid">
+                    <div class="main-nav__logo-box">
+                        <a href="index.html">
+                            <img width="137" src="assets/images/logo-1-1.png" alt="">
+                        </a>
+                        <a href="#" class="side-menu__toggler"><i class="fa fa-bars"></i></a>
+                    </div><!-- /.main-nav__logo-box -->
+                    <div class="main-nav__main-navigation">
+                        <ul class=" main-nav__navigation-box">
+                            <li class="dropdown">
+                                <a href="index.html">Home</a>
+                                
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="prevention.html">Preventions</a>
+                            </li>
+                            <li>
+                                <a href="faqs.html">FAQs</a>
+                            </li>
+
+                            <li class="dropdown">
+                                <a href="https://news.google.com/search?q=covid">News</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div><!-- /.main-nav__main-navigation -->
+                    <div class="main-nav__cta">
+                        <div class="main-nav__cta-icon">
+                            <i class="vimns-icon-phone"></i>
+                        </div><!-- /.main-nav__cta-icon -->
+                        <div class="main-nav__cta-content">
+                            <h3><a href="tel:666-888-0000">666 888 0000</a></h3>
+                            <p>Helpline</p>
+                        </div><!-- /.main-nav__cta-content -->
+                    </div><!-- /.main-nav__cta -->
+                    <div class="main-nav__right">
+                        <a href="upload.html" class="main-nav__btn">Detect COVID</a><!-- /.main-nav__btn -->
+                    </div><!-- /.main-nav__right -->
+                </div><!-- /.container-fluid -->
+            </nav><!-- /.main-nav__one -->
+
+        </header><!-- /.site-header-one -->
+
+
+        <section class="page-header">
+            <div class="container">
+                <h2>CT Scan Detection Results</h2>
+                <ul class="thm-breadcrumb list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><span>Results</span></li>
+                </ul><!-- /.thm-breadcrumb -->
+            </div><!-- /.container -->
+        </section><!-- /.page-header -->
+
+        <section class="about-three">
+            <div class="container">
+                <div class="block-title text-center">
+                    <h3 style="font-size: 70px; margin-top: -60px;">Input Image</h3>
+                </div><!-- /.block-title -->
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="about-three__image">
+                            <!-- <img src="assets/images/resources/about-2-1.png" alt=""> -->
+                        </div><!-- /.about-three__image -->
+                        <div>
+                            <img src="assets/images/shapes/funfact-virus-1-1.png" style="padding-left: 50px;" class="funfact-one__virus-1" alt="">
+                            
+                        </div><!-- /.about-three__title -->
+                    </div><!-- /.col-lg-4 -->
+                    <div class="col-lg-8" style="padding-bottom: 40px">
+                        
+                            <img src="assets/images/upload_ct.jpg" height="320px" width="380px" style="margin-top: -20px;" alt="">
+                            <img src="assets/images/shapes/funfact-virus-1-2.png" style="padding-right: 50px" class="funfact-one__virus-2" alt="">
+                        <!-- /.about-three__image -->
+                    </div><!-- /.col-lg-8 -->
+
+
+
+
+                    <div class="col-lg-6" style="padding-left: 100px;">
+                    <div class="card" style="width: 30rem;">
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Xception Classification Report for CT Scan</p>
+                    <img class="card-img-top" src="assets/images/xception_ct_report.png" height="200px" alt="Card image cap">
+                    <br>
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Xception Prediction Result</p>
+                    <div class="card-body" style="padding-top: 0px;margin-top: -20px;">
+                        <div class="about-three__title">
+                            <p style="text-align: center;color: white;font-size: 23px;">{{ xception_ct_pred }}<p>
+                        </div><!-- /.about-three__title -->
+                    </div>
+                    </div>
+                    </div><!-- Card Ends< -->
+
+
+                    <div class="col-lg-6">
+                    <div class="card" style="width: 30rem;">
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">VGG Classification Report for CT Scan</p>
+                    <img class="card-img-top" src="assets/images/vgg_ct_report.png" height="200px" alt="Card image cap">
+                    <br>
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">VGG Prediction Result</p>
+                    <div class="card-body" style="padding-top: 0px;margin-top: -20px;">
+                        <div class="about-three__title" style="background: linear-gradient(to top left, #ff6600 16%, #ffff00 100%);">
+                            <p style="text-align: center;color: white;font-size: 23px;">{{ vgg_ct_pred }}<p>
+                        </div><!-- /.about-three__title -->
+                    </div>
+                    </div>
+                    </div><!-- Card Ends< -->
+
+                    <div class="col-lg-6" style="padding-left: 100px; padding-top: 50px;">
+                    <div class="card" style="width: 30rem;">
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Inception Classification Report for CT Scan</p>
+                    <img class="card-img-top" src="assets/images/inception_ct_report.png" height="200px" alt="Card image cap">
+                    <br>
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Inception Prediction Result</p>
+                    <div class="card-body" style="padding-top: 0px;margin-top: -20px;">
+                        <div class="about-three__title">
+                            <p style="text-align: center;color: white;font-size: 23px;">{{ inception_ct_pred }}<p>
+                        </div><!-- /.about-three__title -->
+                    </div>
+                    </div>
+                    </div><!-- Card Ends< -->
+
+
+                    <div class="col-lg-6" style="padding-top: 50px;">
+                    <div class="card" style="width: 30rem;">
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Resnet Classification Report for CT Scan</p>
+                    <img class="card-img-top" src="assets/images/resnet_ct_report.png" height="200px" alt="Card image cap">
+                    <br>
+                    <p class="card-title" style="text-align: center; padding-top: 10px;padding-bottom: 10px;color:white; background-color:#112559;">Resnet Prediction Result</p>
+                    <div class="card-body" style="padding-top: 0px;margin-top: -20px;">
+                        <div class="about-three__title" style="background: linear-gradient(to top left, #ff6600 16%, #ffff00 100%);">
+                            <p style="text-align: center;color: white;font-size: 23px;">{{ resnet_ct_pred }}<p>
+                        </div><!-- /.about-three__title -->
+                    </div>
+                    </div>
+                    </div><!-- Card Ends< -->
+                    
+
+
+                    
+                </div><!-- /.row -->
+                
+            </div><!-- /.container -->
+        </section><!-- /.about-three -->
+
+
+        <section class="testimonials-one" id="testimonials">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="testimonials-one__image-block">
+                            <div class="owl-carousel owl-theme" id="sync2">
+                                <div class="item clearfix">
+                                    <div class="testimonials-one__image">
+                                        <img src="assets/images/testimonials/testimonials-1-1.jpg" class="testimonials-one__thumb" alt="Awesome Image" />
+                                        <div class="testimonials-one__qoute">
+                                            <img src="assets/images/testimonials/testimonials-qoute-1-1.png" alt="Awesome Image" />
+                                        </div><!-- /.testimonials-one__qoute -->
+                                    </div><!-- /.testimonials-one__image -->
+                                </div><!-- /.item -->
+                                <div class="item clearfix">
+                                    <div class="testimonials-one__image">
+                                        <img src="assets/images/testimonials/testimonials-1-2.jpg" class="testimonials-one__thumb" alt="Awesome Image" />
+                                        <div class="testimonials-one__qoute">
+                                            <img src="assets/images/testimonials/testimonials-qoute-1-1.png" alt="Awesome Image" />
+                                        </div><!-- /.testimonials-one__qoute -->
+                                    </div><!-- /.testimonials-one__image -->
+                                </div><!-- /.item -->
+                                <div class="item clearfix">
+                                    <div class="testimonials-one__image">
+                                        <img src="assets/images/testimonials/testimonials-1-3.jpg" class="testimonials-one__thumb" alt="Awesome Image" />
+                                        <div class="testimonials-one__qoute">
+                                            <img src="assets/images/testimonials/testimonials-qoute-1-1.png" alt="Awesome Image" />
+                                        </div><!-- /.testimonials-one__qoute -->
+                                    </div><!-- /.testimonials-one__image -->
+                                </div><!-- /.item -->
+                            </div><!-- /.owl-carousel owl-theme -->
+                            <div class="testimonials-one__button-block">
+                                <button class="testimonials-one__button__prev-btn"></button>
+                                <button class="testimonials-one__button__current-btn"></button>
+                                <button class="testimonials-one__button__next-btn"></button>
+                            </div>
+                        </div><!-- /.testimonials-one__image-block -->
+                    </div><!-- /.col-lg-6 -->
+                    <div class="col-lg-6">
+                        <div class="testimonials-one__content">
+                            <div class="block-title text-left">
+                                <p>Our Feedbacks </p>
+                                <h3>What Infected People Are <br> Saying About Virus</h3>
+                            </div><!-- /.block-title -->
+
+                            <div class="owl-carousel owl-theme" id="sync1">
+                                <div class="item">
+                                    <div class="testimonials-one__single" data-thumb-img="assets/images/testimonials/testimonials-1-1.jpg">
+                                        <p class="testimonials-one__text">This is due to their excellent service, competitive
+                                            pricing and customer support. It’s throughly refresing to get such a personal touch.
+                                            </p><!-- /.testimonials-one__text -->
+                                        <div class="testimonials-one__bottom">
+                                            <h3 class="testimonials-one__title">Jona Leisey</h3>
+                                            <!-- /.testimonials-one__title -->
+                                        </div><!-- /.testimonials-one__bottom -->
+                                    </div><!-- /.testimonials-one__single -->
+                                </div><!-- /.item -->
+                                <div class="item">
+                                    <div class="testimonials-one__single" data-thumb-img="assets/images/testimonials/testimonials-1-2.jpg">
+                                        <p class="testimonials-one__text">This is due to their excellent service, competitive
+                                            pricing and customer support. It’s throughly refresing to get such a personal touch.
+                                            </p><!-- /.testimonials-one__text -->
+                                        <div class="testimonials-one__bottom">
+                                            <h3 class="testimonials-one__title">Chas Samul</h3>
+                                            <!-- /.testimonials-one__title -->
+                                        </div><!-- /.testimonials-one__bottom -->
+                                    </div><!-- /.testimonials-one__single -->
+                                </div><!-- /.item -->
+                                <div class="item">
+                                    <div class="testimonials-one__single" data-thumb-img="assets/images/testimonials/testimonials-1-3.jpg">
+                                        <p class="testimonials-one__text">This is due to their excellent service, competitive
+                                            pricing and customer support. It’s throughly refresing to get such a personal touch.
+                                            </p><!-- /.testimonials-one__text -->
+                                        <div class="testimonials-one__bottom">
+                                            <h3 class="testimonials-one__title">Chelsey Pozar</h3>
+                                            <!-- /.testimonials-one__title -->
+                                        </div><!-- /.testimonials-one__bottom -->
+                                    </div><!-- /.testimonials-one__single -->
+                                </div><!-- /.item -->
+                            </div><!-- /.owl-carousel owl-theme -->
+                        </div><!-- /.testimonials-one__content -->
+                    </div><!-- /.col-lg-6 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </section><!-- /.testimonials-one -->
+
+
+
+        
+        
+
+        <footer class="site-footer-one site-footer-one__home-one">
+
+            <div class="site-footer-one__upper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <div class="footer-widget footer-widget__about">
+                                <a href="index.html" class="footer-widget__logo">
+                                    <img width="137" src="assets/images/loader.png" alt="">
+                                </a>
+                                <p></p>
+                            </div><!-- /.footer-widget footer-widget__about -->
+                        </div><!-- /.col-lg-4 -->
+                        <div class="col-lg-3">
+                            <div class="footer-widget footer-widget__links">
+                                <h3 class="footer-widget__title">Quick Links</h3><!-- /.footer-widget__title -->
+                                <div class="footer-widget__links-wrap">
+                                    <ul class="list-unstyled footer-widget__links-list">
+                                        <li><a href="about.html">About</a></li>
+                                        
+                                        <li><a href="prevention.html">Prevention</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul><!-- /.list-unstyled -->
+                                    <ul class="list-unstyled footer-widget__links-list">
+                                        <li><a href="faqs.html">FAQs</a></li>
+                                        <li><a href="about.html">Privacy Policy</a></li>
+                                        <li><a href="about.html">Terms of Use</a></li>
+                                    </ul><!-- /.list-unstyled -->
+                                </div><!-- /.footer-widget__links-wrap -->
+
+                            </div><!-- /.footer-widget footer-widget__about -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-3">
+                            <div class="footer-widget footer-widget__contact">
+                                <h3 class="footer-widget__title">Contact</h3><!-- /.footer-widget__title -->
+                                <p><a href="tel:888-999-0000">888 999 0000</a></p>
+                                <p><a href="kaushikjadhav01@github.com">kaushikjadhav01@github.com</a> </p>
+                                <p>19/293, Vihang Tower, <br> Mumbai 400104</p>
+                            </div><!-- /.footer-widget footer-widget__contact -->
+                        </div><!-- /.col-lg-3 -->
+                        <div class="col-lg-2 d-flex">
+                            <div class="footer-widget my-auto">
+                                <div class="footer-widget__social">
+                                    <a href="#" class="fab fa-facebook-square" href="https://www.facebook.com/"></a>
+                                    <a href="#" class="fab fa-twitter" href="https://www.twitter.com/"></a>
+                                    <a href="#" class="fab fa-instagram" href="https://www.instagram.com/"></a>
+                                    <a href="#" class="fab fa-pinterest-p" href="https://www.pinterest.com/"></a>
+                                </div><!-- /.footer-widget__social -->
+                            </div><!-- /.footer-widget -->
+                        </div><!-- /.col-lg-2 -->
+                    </div><!-- /.row -->
+                </div><!-- /.container -->
+            </div><!-- /.site-footer-one__upper -->
+            <div class="site-footer-one__bottom">
+                <div class="container">
+                    <p>© copyright 2020 by <a href="#">kaushikjadhav01</a></p>
+                </div><!-- /.container -->
+            </div><!-- /.site-footer-one__bottom -->
+        </footer><!-- /.site-footer-one -->
+    </div><!-- /.page-wrapper -->
+
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="fa fa-angle-up"></i></a>
+
+
+    <div class="side-menu__block">
+
+
+        <div class="side-menu__block-overlay custom-cursor__overlay">
+            <div class="cursor"></div>
+            <div class="cursor-follower"></div>
+        </div><!-- /.side-menu__block-overlay -->
+        <div class="side-menu__block-inner ">
+            <div class="side-menu__top justify-content-end">
+
+                <a href="#" class="side-menu__toggler side-menu__close-btn"><img src="assets/images/shapes/close-1-1.png" alt=""></a>
+            </div><!-- /.side-menu__top -->
+
+
+            <nav class="mobile-nav__container">
+                <!-- content is loading via js -->
+            </nav>
+            <div class="side-menu__sep"></div><!-- /.side-menu__sep -->
+            <div class="side-menu__content">
+                <p></p>
+                <p><a href="mailto:kaushikjadhav01@github.com">kaushikjadhav01@github.com</a> <br> <a href="tel:888-999-0000">888 999 0000</a></p>
+                <div class="side-menu__social">
+                    <a href="#" class="fab fa-facebook-square" href="https://www.facebook.com/"></a>
+                                    <a href="#" class="fab fa-twitter" href="https://www.twitter.com/"></a>
+                                    <a href="#" class="fab fa-instagram" href="https://www.instagram.com/"></a>
+                                    <a href="#" class="fab fa-pinterest-p" href="https://www.pinterest.com/"></a>
+                </div>
+            </div><!-- /.side-menu__content -->
+        </div><!-- /.side-menu__block-inner -->
+    </div><!-- /.side-menu__block -->
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.min.js"></script>
+    <script src="assets/js/jquery.validate.min.js"></script>
+    <script src="assets/js/bootstrap-select.min.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/bootstrap-datepicker.min.js"></script>
+    <script src="assets/js/isotope.js"></script>
+
+    <!-- template scripts -->
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/testimonials-owl.carousel.config.js"></script>
+</body>
+
+</html>
