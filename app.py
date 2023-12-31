@@ -196,6 +196,6 @@ def uploaded_ct():
 
    return render_template('results_ct.html',resnet_ct_pred=resnet_ct_pred,vgg_ct_pred=vgg_ct_pred,inception_ct_pred=inception_ct_pred,xception_ct_pred=xception_ct_pred)
 
-if __name__ == '__main__':
-   app.secret_key = ".."
-   app.run()
+# if __name__ == '__main__':
+#    app.secret_key = ".."
+#    app.run()
