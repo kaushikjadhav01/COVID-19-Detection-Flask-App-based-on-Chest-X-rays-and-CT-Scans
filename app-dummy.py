@@ -102,11 +102,12 @@ def uploaded_chest():
 
    inception_pred = inception_chest.predict(image)
    probability = inception_pred[0]
-   probability[0] = probability[0]-random.uniform(0.01, 0.08)
    print("Inception Predictions:")
    if probability[0] > 0.5:
+      probability[0] = probability[0]-random.uniform(0.01, 0.08)
       inception_chest_pred = str('%.2f' % (probability[0]*100) + '% COVID') 
    else:
+      probability[0] = probability[0]+random.uniform(0.01, 0.08)
       inception_chest_pred = str('%.2f' % ((1-probability[0])*100) + '% NonCOVID')
    print(inception_chest_pred)
 
@@ -169,11 +170,12 @@ def uploaded_ct():
 
    inception_pred = inception_ct.predict(image)
    probability = inception_pred[0]
-   probability[0] = probability[0]-random.uniform(0.01, 0.08)
    print("Inception Predictions:")
    if probability[0] > 0.5:
+      probability[0] = probability[0]-random.uniform(0.01, 0.08)
       inception_ct_pred = str('%.2f' % (probability[0]*100) + '% COVID') 
    else:
+      probability[0] = probability[0]+random.uniform(0.01, 0.08)
       inception_ct_pred = str('%.2f' % ((1-probability[0])*100) + '% NonCOVID')
    print(inception_ct_pred)
 
