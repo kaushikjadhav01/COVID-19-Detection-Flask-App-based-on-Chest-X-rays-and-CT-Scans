@@ -13,13 +13,13 @@ import matplotlib.pyplot as plt
 import cv2
 import numpy as np
 
-UPLOAD_FOLDER = './flask app/assets/images'
+UPLOAD_FOLDER = './flask_app/assets/images'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 # Create Database if it doesnt exist
 
 app = Flask(__name__,static_url_path='/assets',
-            static_folder='./flask app/assets', 
-            template_folder='./flask app')
+            static_folder='./flask_app/assets', 
+            template_folder='./flask_app')
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 
@@ -86,7 +86,7 @@ def uploaded_chest():
    inception_chest = load_model('models/inceptionv3_chest.h5')
    xception_chest = load_model('models/xception_chest.h5')
 
-   image = cv2.imread('./flask app/assets/images/upload_chest.jpg') # read file 
+   image = cv2.imread('./flask_app/assets/images/upload_chest.jpg') # read file 
    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) # arrange format as per keras
    image = cv2.resize(image,(224,224))
    image = np.array(image) / 255
@@ -152,7 +152,7 @@ def uploaded_ct():
    inception_ct = load_model('models/inception_ct.h5')
    xception_ct = load_model('models/xception_ct.h5')
 
-   image = cv2.imread('./flask app/assets/images/upload_ct.jpg') # read file 
+   image = cv2.imread('./flask_app/assets/images/upload_ct.jpg') # read file 
    image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB) # arrange format as per keras
    image = cv2.resize(image,(224,224))
    image = np.array(image) / 255
