@@ -3,3 +3,4 @@ tensorflow
 matplotlib
 numpy
 opencv-python
+gunicorn
