@@ -81,8 +81,8 @@ def uploaded_chest():
             # filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], 'upload_chest.jpg'))
 
-   resnet_chest = load_model('models/resnet_chest.h5')
-   vgg_chest = load_model('models/vgg_chest.h5')
+   resnet_chest = load_model('models/resnet50.h5')
+   vgg_chest = load_model('models/resnet50.h5')
    inception_chest = load_model('models/inceptionv3_chest.h5')
    xception_chest = load_model('models/xception_chest.h5')
 
