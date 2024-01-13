@@ -1,4 +1,37 @@
+[![DOI](https://zenodo.org/badge/267851869.svg)](https://zenodo.org/doi/10.5281/zenodo.10499142)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/blob/main/LICENSE)
+[![Code Coverage](https://codecov.io/gh/NCSU-Fall-2022-SE-Project-Team-11/XpensAuditor---Group-11/branch/main/graphs/badge.svg)](https://codecov.io)
+![GitHub contributors](https://img.shields.io/badge/Contributors-1-brightgreen)
+[![Documentation Status](https://readthedocs.org/projects/ansicolortags/badge/?version=latest)](https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/edit/master/README.md)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)
+![GitHub issues](https://img.shields.io/github/issues/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)
+[![GitHub Repo Size](https://img.shields.io/github/repo-size/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans.svg)](https://img.shields.io/github/repo-size/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans.svg)
+[![GitHub last commit](https://img.shields.io/github/last-commit/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)](https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/commits/main)
+![GitHub language count](https://img.shields.io/github/languages/count/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)
+[![Commit Acitivity](https://img.shields.io/github/commit-activity/m/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)](https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)
+[![Code Size](https://img.shields.io/github/languages/code-size/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)](mpp-backend)
+![GitHub forks](https://img.shields.io/github/forks/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans?style=social)
+![GitHub stars](https://img.shields.io/github/stars/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans?style=social)
+
 # COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans
+COVID-19 Detection based on Chest X-rays and CT Scans using four Transfer Learning algorithms: VGG16, ResNet50, InceptionV3, Xception. Live Demo: http://coviddetector.kajadhav.me <br/><br/>
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#system-description-and-functions">System Description and Functions</a></li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#how-to-use-flask-app">How to use Flask App</a></li>
+    <li><a href="#how-to-use-jupyter-notebooks">How to use Jupyter Notebooks</a></li>
+    <li><a href="#authors">Authors</a></li>
+    <li><a href="#links">Links</a></li>
+  </ol>
+</details>
+
+## System Description and Functions
+**Live Demo:** http://coviddetector.kajadhav.me<br/>
 COVID-19 Detection based on Chest X-rays and CT Scans using four Transfer Learning algorithms: VGG16, ResNet50, InceptionV3, Xception. The models were trained for 500 epochs on around 1000 Chest X-rays and around 750 CT Scan images on Google Colab GPU. After training, the accuracies acheived for the model are as follows:
 <pre>
                 InceptionV3  VGG16   ResNet50   Xception
@@ -11,16 +44,13 @@ A Flask App was later developed wherein user can upload Chest X-rays or CT Scans
 The article for the project was selected and published in <b>Towards Data Science</b>:<br> 
 https://towardsdatascience.com/covid-19-detector-flask-app-based-on-chest-x-rays-and-ct-scans-using-deep-learning-a0db89e1ed2a
 
-# NOTE ----- DO THIS BEFORE SETUP -----
-The dataset and models of the repository have been moved to Google Drive due to expiry of my Github LFS. So please download the zip file from <b><a href="https://drive.google.com/file/d/1dA-rdmDmCGa3xxW5KpfLJdo7M54lPcQq/view?usp=sharing">here</a></b>, extract it and replace the above data and models folder with these. <b>Make sure you follow these steps otherwise Flask App will not work properly. Also make sure you have PYTHON V 3.8.5. Other versions might not be supported</b>
-
-# Dataset
+## Dataset
 The dataset for the project was gathered from two sources:
 1. Chest X-ray images (1000 images) were obtained from: https://github.com/ieee8023/covid-chestxray-dataset
 2. CT Scan images (750 images) were obtained from: https://github.com/UCSD-AI4H/COVID-CT/tree/master/Data-split
 80% of the images were used for training the models and the remaining 20% for testing
 
-# Evaluation and Results
+## Evaluation and Results
 <h3>Sample output of test images</h3><br>
 
 <img src="https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/blob/master/screenshots/sample_chest.PNG"> <img src="https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/blob/master/screenshots/sample_ct.PNG">
@@ -49,7 +79,7 @@ The dataset for the project was gathered from two sources:
 
 <img src="https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/blob/master/screenshots/resnet_ct_cm.PNG"> <img src="https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/blob/master/screenshots/xception_ct_cm.PNG">
 
-<h3>Screenshots of Flask App</h3>
+### Screenshots of Flask App###
 
 <img src="https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/blob/master/screenshots/banner.PNG">
 
@@ -77,6 +107,13 @@ More information can be found <a href="https://www.mathworks.com/help/deeplearni
 <b>Xception</b> is a convolutional neural network that is 71 layers deep. You can load a pretrained version of the network trained on more than a million images from the ImageNet database. The pretrained network can classify images into 1000 object categories, such as keyboard, mouse, pencil, and many animals. As a result, the network has learned rich feature representations for a wide range of images. The network has an image input size of 299-by-299. <br>
 More information can be found <a href="https://www.mathworks.com/help/deeplearning/ref/resnet50.html#:~:text=ResNet%2D50%20is%20a%20convolutional,%2C%20pencil%2C%20and%20many%20animals.">here</a>
 
+## Built With
+![Flask](https://img.shields.io/badge/Flask-4EA94B?style=for-the-badge&amp;logo=flask&amp;logoColor=white)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&amp;logo=python&amp;logoColor=white)
+![Javascript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+![html](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![css](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 ## How to use Flask App
 <ul>
@@ -93,11 +130,23 @@ More information can be found <a href="https://www.mathworks.com/help/deeplearni
   <li>Activate free <b>Google Colab GPU</b> for faster execution. Go to Runtime -> Change Runtime Type -> Hardware Accelerator -> GPU -> Save</li>
 </ul>
 
-# Authors
-## Kaushik Jadhav
+## Authors
+### Kaushik Jadhav
 <ul>
-<li>Github:https://github.com/kaushikjadhav01</li>
-<li>Medium:https://medium.com/@kaushikjadhav01</li>
-<li>LinkedIn:https://www.linkedin.com/in/kaushikjadhav01/</li>
-<li>Portfolio:http://kaushikjadhav01.github.io/</li>
+<li>Github: https://github.com/kaushikjadhav01</li>
+<li>Medium: https://medium.com/@kaushikjadhav01</li>
+<li>LinkedIn: https://www.linkedin.com/in/kaushikjadhav01/</li>
+<li>Portfolio: http://kajadhav.me/</li>
+<li>Linked In: https://www.linkedin.com/in/kajadhav/
+<li>Dev.to: https://dev.to/kaushikjadhav01
+<li>Codesignal: https://app.codesignal.com/profile/kaushik_j_vtc
+<li>Google Scholar: https://scholar.google.com/citations?user=iRYcFi0AAAAJ
+<li>Daily.dev: https://app.daily.dev/kaushikjadhav01
+<li>Google devs: https://developers.google.com/profile/u/kaushikjadhav01
+<li>Stack Overflow: https://stackoverflow.com/users/21890981/kaushik-jadhav
 </ul>
+
+## Links
+* [Web site](http://coviddetector.kajadhav.me/)
+* [Issue tracker](https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans/issues)
+* [Source code](https://github.com/kaushikjadhav01/COVID-19-Detection-Flask-App-based-on-Chest-X-rays-and-CT-Scans)
